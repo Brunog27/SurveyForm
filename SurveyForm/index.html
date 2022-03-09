@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Survey.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="title">CouchToFit Survey Form</h1>
+      <p id="description">Please fill up the form to help us better meet your needs</p>
+    </header>
+    <form id="survey-form">
+      <div class="group-form">
+        <label for="name" id="name-label">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+          />
+      </div>
+
+      <div class="group-form">
+        <label for="email" id="email-label">Email:</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your email"
+          required
+          />
+      </div>
+
+      <div class="group-form">
+        <label for="age" id="number-label">Age:</label>
+        <input
+          type="text"
+          name="age"
+          id="number"
+          class="form-control"
+          min="10"
+          max="99"
+          placeholder="Age"
+          />
+      </div>
+
+      <div class="group-form">
+        <label for="activity">What option best describes your current exercise level?</label>
+
+        <select name="activity" id="dropdown" class="form-control">
+          <option value="none">None</option>
+          <option value="little">Brisk walk or light jog</option>
+          <option value="2to3">2x to 3x strenght training a week</option>
+          <option value="5days">5x strenght training a week</option>
+        </select>
+      </div>
+
+      <div class="group-form">
+        <p>Please enter your experience level:</p>
+
+        <label>
+          <input
+            type="radio"
+            class="input-radio"
+            name="exp"
+            value="beginner"
+            checked
+            />Beginner
+          </label>
+
+        <label>
+          <input
+            type="radio"
+            class="input-radio"
+            name="exp"
+            value="intermediate"
+            />Intermediate
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            class="input-radio"
+            name="exp"
+            value="expert"
+            />Expert
+        </label>
+      </div>
+
+      <div class="group-form">
+        <label for="goal">What is your fitness goal?</label>
+
+        <select name="goal" id="dropdown" class="form-control">
+          <option value="lose">Lose weight</option>
+          <option value="gain">Gain muscle mass</option>
+          <option value="maintain">Maintain</option>
+        </select>
+
+      <div class="group-form">
+        <br>
+        <p>What is your gym/equipament availability?(Check all that apply)</p>
+
+        <label>
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="home"
+            value="Home"
+          />Home/Bodyweight
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="kettle"
+            value="Kettle"
+            />Kettle Bell
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="free"
+            value="Free"
+          />Free Weights/Dumbells
+        </label>
+
+        <label>
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="gym"
+            value="Gym"
+            />Gym membership
+        </label>
+
+      </div>
+
+      <div class="group-form">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          name="comment"
+          class="input-textarea"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+
+      <div class="group-form">
+        <input type="submit" id="submit" class="submit-button">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
